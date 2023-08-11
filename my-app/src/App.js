@@ -13,10 +13,10 @@ function App() {
     <Box>
       <Stack direction="row" spacing={3} justifyContent={'center'}>
       <NavBar></NavBar>
-      {/* <SideBar></SideBar>
+      <SideBar></SideBar>
       <Feed></Feed>
       <RightBar></RightBar>
-      <Footer></Footer> */}
+      {/* <Footer></Footer> */}
       </Stack>
     </Box>
   );
