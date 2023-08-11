@@ -1,7 +1,7 @@
 // import React from 'react';
-// import SideBar from './components/sidebar';
-// import Feed from './components/feed';
-// import RightBar from './components/rightbar';
+import SideBar from './sidebar';
+import Feed from './feed';
+import RightBar from './rightbar';
 // import Footer from './components/footer';
 import NavBar from './navbar';
 import { Box, Stack } from '@mui/material';
