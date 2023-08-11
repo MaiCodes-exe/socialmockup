@@ -3,7 +3,7 @@
 // import Feed from './components/feed';
 // import RightBar from './components/rightbar';
 // import Footer from './components/footer';
-import NavBar from ' ./components/navbar';
+import NavBar from ' ./navbar';
 import { Box, Stack } from '@mui/material';
 
 
