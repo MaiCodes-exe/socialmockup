@@ -3,7 +3,7 @@ import SideBar from './sidebar';
 import Feed from './feed';
 import RightBar from './rightbar';
 // import Footer from './components/footer';
-import NavBar from './navbar';
+// import NavBar from './navbar';
 import { Box, Stack } from '@mui/material';
 
 
@@ -11,8 +11,8 @@ import { Box, Stack } from '@mui/material';
 function App() {
   return (
     <Box>
-      <Stack direction="row" spacing={3} justifyContent={'center'}>
-      <NavBar></NavBar>
+      <Stack direction="row" spacing={3} justifyContent={'space-evenly'}>
+      {/* <NavBar></NavBar> */}
       <SideBar></SideBar>
       <Feed></Feed>
       <RightBar></RightBar>
