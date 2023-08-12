@@ -1,8 +1,11 @@
+import { AppBar } from '@mui/material';
 import React from 'react';
 
 const NavBar = () => {
   return (
-    <div> I am NavBar</div>
+    <AppBar>
+      
+    </AppBar>
   );
 };
 
