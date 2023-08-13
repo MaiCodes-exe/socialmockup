@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import SideBar from './sidebar';
 import Feed from './feed';
 import RightBar from './rightbar';
