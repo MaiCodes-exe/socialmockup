@@ -7,8 +7,8 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-
-
+import Search from '@mui/material'
+// import SearchIconWrapper from '@mui/material/SearchIconWrapper'
 
 
 
@@ -36,10 +36,10 @@ const NavBar = () => {
             MUI
           </Typography>
           <Search>
-            <SearchIconWrapper>
+            {/* <SearchIconWrapper> */}
               <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
+            {/* </SearchIconWrapper> */}
+            <InputBase
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
             />
