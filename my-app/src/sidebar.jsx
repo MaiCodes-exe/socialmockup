@@ -11,6 +11,7 @@ import DraftsIcon from '@mui/icons-material/Drafts';
 import HomeIcon from '@mui/icons-material/Home';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import Switch from '@mui/material/Switch';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
@@ -42,10 +43,11 @@ export default function SideBar() {
         </List>
       </nav>
       <Divider />
-      {/* <nav aria-label="secondary mailbox folders">
+      <nav aria-label="secondary mailbox folders">
         <List>
           <ListItem disablePadding>
             <ListItemButton>
+                <DeleteIcon/>
               <ListItemText primary="Trash" />
             </ListItemButton>
           </ListItem>
@@ -55,7 +57,7 @@ export default function SideBar() {
             </ListItemButton>
           </ListItem>
         </List>
-      </nav> */}
+      </nav>
     </Box>
   );
 };
