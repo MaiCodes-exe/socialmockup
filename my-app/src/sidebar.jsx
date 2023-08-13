@@ -35,8 +35,8 @@ export default function SideBar() {
             <ListItemButton>
               <ListItemIcon>
                 <DarkModeIcon />
-                <Switch {...label} />
               </ListItemIcon>
+                <Switch {...label} />
             </ListItemButton>
           </ListItem>
         </List>
