@@ -35,8 +35,8 @@ const Feed = () => {
       />
       <CardMedia
         component="img"
-        height="194"
-        image="/static/images/cards/paella.jpg"
+        height="20%"
+        image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fwww.guggenheim.org%2Fwp-content%2Fuploads%2F1927%2F01%2F76.2553.71_ph_web.jpg&f=1&nofb=1&ipt=eb2c82c1a9c5e3bb8662c7aba38dadd8b76e24c7ce01e5cfca533c19d823c005&ipo=images"
         alt="Paella dish"
       />
       <CardContent>
