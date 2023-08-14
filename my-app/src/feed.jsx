@@ -18,7 +18,7 @@ const Feed = () => {
   return (
     <Box flex={4} p={2}> 
     
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
