@@ -22,7 +22,8 @@ const label = { inputProps: { 'aria-label': 'Switch demo' } };
 export default function SideBar() {
   return (
     <Box sx={{ width: '100%', maxWidth: 360}}>
-      <nav aria-label="main mailbox folders">
+        <Box position={'fixed'}>
+        <nav aria-label="main mailbox folders">
         <List>
           <ListItem disablePadding>
             <ListItemButton>
@@ -58,6 +59,7 @@ export default function SideBar() {
           </ListItem>
         </List>
       </nav>
+        </Box>
     </Box>
   );
 };
