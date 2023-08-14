@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@mui/material';
+import { Box, Checkbox } from '@mui/material';
 // import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -10,9 +10,17 @@ import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+
+import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
+import Favorite from '@mui/icons-material/Favorite';
+import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
+import BookmarkIcon from '@mui/icons-material/Bookmark';
+
+
+
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 const Feed = () => {
   return (
@@ -48,7 +56,12 @@ const Feed = () => {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
+        <Checkbox {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
+      <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
