@@ -1,7 +1,22 @@
 import React from 'react'
+import { Tooltip } from '@mui/material'
 
-export const add = () => {
+
+
+
+export const Add = () => {
   return (
-    <div>add</div>
+    <>
+        <Tooltip title="Delete">
+            <Fab color="primary" aria-label="add">
+                <AddIcon />
+            </Fab>
+            <DeleteIcon />
+        </Tooltip>
+    </>
   )
+   
 }
+
+
+// export default Add

@@ -16,8 +16,8 @@ function App() {
       <SideBar></SideBar>
       <Feed></Feed>
       <RightBar></RightBar>
-      {/* <Footer></Footer> */}
       </Stack>
+      <Add/>
     </Box>
   );
 }
