@@ -16,7 +16,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 const Feed = () => {
   return (
-    <Box bgcolor={'red'} flex={4}> 
+    <Box flex={4} p={2}> 
     
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
