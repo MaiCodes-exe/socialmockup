@@ -2,11 +2,10 @@ import React from 'react';
 import SideBar from './sidebar';
 import Feed from './feed';
 import RightBar from './rightbar';
-// import Footer from './components/footer';
 import NavBar from './navbar';
 import { Box, Stack } from '@mui/material';
 
-
+import Add from './add';
 
 function App() {
   return (
