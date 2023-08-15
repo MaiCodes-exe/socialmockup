@@ -3,9 +3,9 @@ import { Tooltip, Modal, Box, Typography, Avatar, TextField, styled, Stack, Butt
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
 import Button from '@mui/material/Button';
-
-
-
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
+import VideoCameraBackIcon from '@mui/icons-material/VideoCameraBack';
+import ImageIcon from '@mui/icons-material/Image';
 
 
 const style = {
@@ -71,10 +71,9 @@ export const Add = () => {
             variant="standard"
           />
           <Stack direction="row" gap={1} mt={2} mb={3}>
-            {/* <EmojiEmotions color="primary" />
-            <Image color="secondary" />
-            <VideoCameraBack color="success" />
-            <PersonAdd color="error" /> */}
+            <ImageIcon></ImageIcon>
+            <VideoCameraBackIcon></VideoCameraBackIcon>
+            <PersonAddIcon></PersonAddIcon>
           </Stack>
           <ButtonGroup
             fullWidth
