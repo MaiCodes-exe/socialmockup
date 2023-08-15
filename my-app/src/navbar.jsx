@@ -52,7 +52,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function NavBar() {
   return (
-      <AppBar position="sticky">
+      <AppBar position="sticky" color='secondary'>
         <Toolbar>
           <IconButton
             size="large"
