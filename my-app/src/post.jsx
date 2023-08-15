@@ -9,7 +9,7 @@ import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { pink, red } from '@mui/material/colors';
+import { grey, pink, purple, red } from '@mui/material/colors';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
@@ -29,7 +29,7 @@ const Post = () => {
     <Card sx={{margin: 5}}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+          <Avatar sx={{ bgcolor: grey[500] }} aria-label="recipe">
             B
           </Avatar>
         }
@@ -111,7 +111,7 @@ const Post = () => {
     <Card sx={{margin: 5}}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+          <Avatar sx={{ bgcolor: red[400] }} aria-label="recipe">
             
           </Avatar>
         }
@@ -120,20 +120,18 @@ const Post = () => {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title="Thorne Bailey"
+        subheader="September 14, 2023"
       />
       <CardMedia
         component="img"
         height="20%"
-        image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fwww.guggenheim.org%2Fwp-content%2Fuploads%2F1927%2F01%2F76.2553.71_ph_web.jpg&f=1&nofb=1&ipt=eb2c82c1a9c5e3bb8662c7aba38dadd8b76e24c7ce01e5cfca533c19d823c005&ipo=images"
-        alt="Paella dish"
+        image="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F7%2F71%2FSt._Bernard_puppy.jpg&f=1&nofb=1&ipt=fefab4af4fafcf6313d61b4959fc89d851fd2ab64e95627a2a615c3641766cc2&ipo=images"
+        alt="Puppy"
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the mussels,
-          if you like.
+          I just adopted this little baby. Everyone say hello to Zelda!
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
