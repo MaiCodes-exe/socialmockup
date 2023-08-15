@@ -23,8 +23,8 @@ const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
 export default function SideBar() {
   return (
-    <Box sx={{ width: '100%', maxWidth: 360}}>
-        <Box position={'fixed'}>
+    <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+        <Box position={'fixed'} bgcolor={'background.paper'}  borderRadius={3}>
         <nav aria-label="main mailbox folders">
         <List>
           <ListItem disablePadding>
