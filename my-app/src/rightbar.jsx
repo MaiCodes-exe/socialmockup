@@ -15,16 +15,19 @@ const RightBar = () => {
   return (
     <Box flex={2} p={2} sx={{display: {xs: "none", sm: "block"}}}>
       <Box width={300}>
-        <Typography variant='h6' fontWeight={100}>Online</Typography>
-        <AvatarGroup max={4}>
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-          <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-          <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+        <Typography variant='h6' fontWeight={90}>Online Friends</Typography>
+        <AvatarGroup max={6}>
+          <Avatar alt="Memy Sharp" src="/static/images/avatar/1.jpg" />
+          <Avatar alt="Bindy Baker" src="/static/images/avatar/3.jpg" />
           <Avatar alt="Agnes Walker" src="/static/images/avatar/4.jpg" />
-          <Avatar alt="Trevor Henderson" src="/static/images/avatar/5.jpg" />
+          <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+          <Avatar alt="Brian Henderson" src="/static/images/avatar/5.jpg" />
+          <Avatar alt="Lawrence Howard" src="/static/images/avatar/2.jpg" />
+          <Avatar alt="Terry Howard" src="/static/images/avatar/2.jpg" />
+
         </AvatarGroup>
         
-        <Typography variant='h6' fontWeight={100} mt={2} mb={2} >Latest Posts</Typography>
+        <Typography variant='h6' fontWeight={90} mt={2} mb={2} >Latest Posts</Typography>
         <ImageList cols={3} rowHeight={100} gap={5}>
           <ImageListItem>
             <img 
@@ -64,7 +67,7 @@ const RightBar = () => {
             />
           </ImageListItem>
         </ImageList>
-        <Typography variant='h6' fontWeight={100} mt={2} mb={2} >Inbox</Typography>
+        <Typography variant='h6' fontWeight={90} mt={2} mb={2} >Inbox</Typography>
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
