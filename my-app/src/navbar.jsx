@@ -55,7 +55,7 @@ export default function NavBar() {
 
   return (
 
-      <AppBar position="sticky" sx={{backgroundColor: "primary.dark"}}>
+      <AppBar position="sticky" sx={{backgroundColor: "palette.primary.tumb"}}>
         <Toolbar>
           <IconButton
             size="large"
