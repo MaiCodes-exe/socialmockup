@@ -14,7 +14,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 const RightBar = () => {
   return (
     <Box flex={2} p={2} sx={{display: {xs: "none", sm: "block"}}}>
-      <Box position={'fixed'} width={300}>
+      <Box width={300}>
         <Typography variant='h6' fontWeight={100}>Online</Typography>
         <AvatarGroup max={4}>
           <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
@@ -64,7 +64,7 @@ const RightBar = () => {
             />
           </ImageListItem>
         </ImageList>
-        <Typography variant='h6' fontWeight={100} mt={2} mb={2} >Latest Posts</Typography>
+        <Typography variant='h6' fontWeight={100} mt={2} mb={2} >Inbox</Typography>
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
