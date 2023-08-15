@@ -14,14 +14,14 @@ import Switch from '@mui/material/Switch';
 import Message from '@mui/icons-material/Message';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
-
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
 
 
 
-export default function SideBar() {
+export default function SideBar({mode,setMode}) {
   return (
     <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
         <Box position={'fixed'} bgcolor={'background.paper'}  borderRadius={3}>
@@ -46,11 +46,11 @@ export default function SideBar() {
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <DarkModeIcon />
+                <PeopleAltIcon />
               </ListItemIcon>
-                <Switch {...label} />
+              <ListItemText primary="Groups" />
             </ListItemButton>
-          </ListItem>
+            </ListItem>
         </List>
       </nav>
       <Divider />
@@ -86,6 +86,14 @@ export default function SideBar() {
                 <SettingsIcon />
               </ListItemIcon>
               <ListItemText primary="Settings" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <DarkModeIcon />
+              </ListItemIcon>
+                <Switch {...label}  onChange={e=> setMode(mode === "light" ? "dark": "light")}/>
             </ListItemButton>
           </ListItem>
         </List>

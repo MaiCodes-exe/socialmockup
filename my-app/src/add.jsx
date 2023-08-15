@@ -55,7 +55,7 @@ export const Add = () => {
         aria-labelledby="parent-modal-title"
         aria-describedby="parent-modal-description"
       >
-        <Box sx={{ ...style, width: 500, borderRadius: 3}}>
+        <Box sx={{ ...style, width: 500, borderRadius: 3}} bgcolor={"background.default"} color={"text.primary"}>
           <Typography variant='h5' color="grey" textAlign={"center"}> Create a new Post</Typography>
           <UserBox>
 
