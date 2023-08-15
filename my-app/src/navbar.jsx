@@ -72,7 +72,7 @@ export default function NavBar() {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            Friendlr
+            Shareblr
           </Typography>
           <Search>
             <SearchIconWrapper>
