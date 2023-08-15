@@ -5,10 +5,12 @@ export const theme = createTheme({
   palette:{
     primary:{
       main: "#1760a5",
-      light: "skyblue"
+      light: "skyblue",
+      dark: "#252B48"
+    
     },
     secondary:{
-      main: '#F7E987'
+      main: '#5d4037'
     },
     otherColor:{
       main:"#999"

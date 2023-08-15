@@ -54,7 +54,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function NavBar() {
 
   return (
-      <AppBar position="sticky" sx={{backgroundColor: "secondary.main"}}>
+
+      <AppBar position="sticky" sx={{backgroundColor: "primary.dark"}}>
         <Toolbar>
           <IconButton
             size="large"
