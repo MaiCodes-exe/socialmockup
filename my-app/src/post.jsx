@@ -9,7 +9,7 @@ import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { grey, pink, purple, red } from '@mui/material/colors';
+import { green, grey, pink, purple, red } from '@mui/material/colors';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
@@ -152,8 +152,8 @@ const Post = () => {
     <Card sx={{margin: 5}}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            
+          <Avatar sx={{ bgcolor: green[500] }} aria-label="recipe">
+            L
           </Avatar>
         }
         action={
@@ -172,7 +172,7 @@ const Post = () => {
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          Currently o vacation. I am in paradise, check this out
+          Sul sul! Currently on vacation. I am in paradise, check this out
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -203,13 +203,13 @@ const Post = () => {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Leilani Luthario"
+        title="Don Luthario"
         subheader="September 14, 2023"
       />
       <CardMedia
         component="img"
         height="20%"
-        image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2017%2F03%2F15%2F76088-beach-sunset.jpg&f=1&nofb=1&ipt=89025ac0479c7f92dfcf0f95021412b6ad869797a25593d9c3464bdf77c103c5&ipo=images"
+        image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.UyHASGvTSJrxQ9s5ugPx8AHaE8%26pid%3DApi&f=1&ipt=83bd2ef0f7c3c58310a26e4d925ee24ca54c6112d6fc32e80d1b3e7ae2f47d60&ipo=images"
         alt="Paella dish"
       />
       <CardContent>
