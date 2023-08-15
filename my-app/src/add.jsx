@@ -6,6 +6,11 @@ import Button from '@mui/material/Button';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import VideoCameraBackIcon from '@mui/icons-material/VideoCameraBack';
 import ImageIcon from '@mui/icons-material/Image';
+import DateRangeIcon from '@mui/icons-material/DateRange';
+import GifBoxIcon from '@mui/icons-material/GifBox';
+
+
+
 
 
 const style = {
@@ -13,10 +18,9 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  height: 200,
+  height: 250,
   width: 500,
   bgcolor: 'background.paper',
-  border: '2px solid #000',
   boxShadow: 24,
   pt: 2,
   px: 4,
@@ -51,13 +55,13 @@ export const Add = () => {
         aria-labelledby="parent-modal-title"
         aria-describedby="parent-modal-description"
       >
-        <Box sx={{ ...style, width: 400}}>
-          <Typography variant='h5' color="grey" textAlign={"center"}> Create a Post</Typography>
+        <Box sx={{ ...style, width: 500, borderRadius: 3}}>
+          <Typography variant='h5' color="grey" textAlign={"center"}> Create a new Post</Typography>
           <UserBox>
-            <Avatar
-              src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              sx={{ width: 30, height: 30 }}
-            />
+
+          <Avatar alt="Jemy Sharp" src="/static/images/avatar/1.jpg" 
+           sx={{ width: 30, height: 30 }}
+          />
             <Typography fontWeight={500} variant="span">
               John Doe
             </Typography>
@@ -70,10 +74,11 @@ export const Add = () => {
             placeholder="What's on your mind?"
             variant="standard"
           />
-          <Stack direction="row" gap={1} mt={2} mb={3}>
-            <ImageIcon></ImageIcon>
-            <VideoCameraBackIcon></VideoCameraBackIcon>
-            <PersonAddIcon></PersonAddIcon>
+          <Stack direction="row" gap={1} mt={2} mb={3} justifyContent={'center'}>
+            <GifBoxIcon/>
+            <ImageIcon/>
+            <VideoCameraBackIcon/>
+            <PersonAddIcon/>
           </Stack>
           <ButtonGroup
             fullWidth
@@ -81,11 +86,10 @@ export const Add = () => {
             aria-label="outlined primary button group"
           >
             <Button>Post</Button>
-            <Button sx={{ width: "100px" }}>
-              {/* <DateRange /> */}
+            <Button md={{ width: "300px" }}>
+              <DateRangeIcon/>
             </Button>
           </ButtonGroup>
-
         </Box>
       </Modal>
     </div>
