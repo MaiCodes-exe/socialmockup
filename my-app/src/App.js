@@ -5,8 +5,7 @@ import RightBar from './rightbar';
 import NavBar from './navbar';
 import Add from './add';
 import { Box, createTheme, Stack, ThemeProvider } from "@mui/material";
-
-
+import styles from "./App.css"
 
 
 
