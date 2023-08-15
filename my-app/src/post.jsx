@@ -153,7 +153,7 @@ const Post = () => {
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
+            
           </Avatar>
         }
         action={
@@ -161,13 +161,55 @@ const Post = () => {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Don Luthario"
+        title="Leilani Luthario"
         subheader="September 14, 2023"
       />
       <CardMedia
         component="img"
         height="20%"
-        image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fwww.guggenheim.org%2Fwp-content%2Fuploads%2F1927%2F01%2F76.2553.71_ph_web.jpg&f=1&nofb=1&ipt=eb2c82c1a9c5e3bb8662c7aba38dadd8b76e24c7ce01e5cfca533c19d823c005&ipo=images"
+        image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2017%2F03%2F15%2F76088-beach-sunset.jpg&f=1&nofb=1&ipt=89025ac0479c7f92dfcf0f95021412b6ad869797a25593d9c3464bdf77c103c5&ipo=images"
+        alt="Beach"
+      />
+      <CardContent>
+        <Typography variant="body2" color="text.secondary">
+          Currently o vacation. I am in paradise, check this out
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites">
+        <Checkbox {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
+      <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+        </IconButton>
+        <IconButton aria-label="share">
+          <ShareIcon />
+        </IconButton>
+      </CardActions>
+      
+    </Card>
+
+    <Card sx={{margin: 5}}>
+      <CardHeader
+        avatar={
+          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+            
+          </Avatar>
+        }
+        action={
+          <IconButton aria-label="settings">
+            <MoreVertIcon />
+          </IconButton>
+        }
+        title="Leilani Luthario"
+        subheader="September 14, 2023"
+      />
+      <CardMedia
+        component="img"
+        height="20%"
+        image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2017%2F03%2F15%2F76088-beach-sunset.jpg&f=1&nofb=1&ipt=89025ac0479c7f92dfcf0f95021412b6ad869797a25593d9c3464bdf77c103c5&ipo=images"
         alt="Paella dish"
       />
       <CardContent>
