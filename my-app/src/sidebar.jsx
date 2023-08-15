@@ -7,11 +7,14 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 import DraftsIcon from '@mui/icons-material/Drafts';
-
+import SettingsIcon from '@mui/icons-material/Settings';
 import HomeIcon from '@mui/icons-material/Home';
+import MessageIcon from '@mui/icons-material/Message';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import Switch from '@mui/material/Switch';
-import DeleteIcon from '@mui/icons-material/Delete';
+import Message from '@mui/icons-material/Message';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
@@ -36,6 +39,14 @@ export default function SideBar() {
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
+                <Message />
+              </ListItemIcon>
+              <ListItemText primary="Messages" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
                 <DarkModeIcon />
               </ListItemIcon>
                 <Switch {...label} />
@@ -45,16 +56,37 @@ export default function SideBar() {
       </nav>
       <Divider />
       <nav aria-label="secondary mailbox folders">
-        <List>
+      <List>
           <ListItem disablePadding>
             <ListItemButton>
-                <DeleteIcon/>
-              <ListItemText primary="Trash" />
+              <ListItemIcon>
+                <DraftsIcon />
+              </ListItemIcon>
+              <ListItemText primary="Drafts" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
-              <ListItemText primary="Spam" />
+            <ListItemButton>
+              <ListItemIcon>
+                <FavoriteIcon />
+              </ListItemIcon>
+              <ListItemText primary="Favourites" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <AccountBoxIcon />
+              </ListItemIcon>
+              <ListItemText primary="Profile" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <SettingsIcon />
+              </ListItemIcon>
+              <ListItemText primary="Settings" />
             </ListItemButton>
           </ListItem>
         </List>
