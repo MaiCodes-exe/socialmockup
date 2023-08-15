@@ -42,8 +42,8 @@ export const Add = () => {
   return (
     <>
         <Tooltip onClick={e=>setOpen(true)}
-        title="Delete" sx={{position:"fixed", bottom: 20, left:{xs:"calc(50% - 20px)", md:30}}}>
-            <Fab color="primary" aria-label="add">
+        title="Create" sx={{position:"fixed", bottom: 20, left:{xs:"calc(50% - 20px)", md:30}}}>
+            <Fab color="light" aria-label="add">
                 <AddIcon />
             </Fab>
         </Tooltip>

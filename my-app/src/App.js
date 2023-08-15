@@ -4,10 +4,7 @@ import Feed from './feed';
 import RightBar from './rightbar';
 import NavBar from './navbar';
 import Add from './add';
-import { Box, createTheme, Stack, ThemeProvider } from "@mui/material";
-import styles from "./App.css"
-
-
+import { Box, createTheme, Stack, ThemeProvider, theme } from "@mui/material";
 
 
 function App() {
@@ -18,6 +15,8 @@ function App() {
       mode: mode
     }
   })
+
+  
   return (
     <ThemeProvider theme={darkTheme}> 
 
