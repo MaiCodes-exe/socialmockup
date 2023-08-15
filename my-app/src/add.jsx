@@ -1,8 +1,11 @@
 import React from 'react'
-import { Tooltip, Modal, Box, Typography} from '@mui/material'
+import { Tooltip, Modal, Box, Typography, Avatar, TextField, styled, Stack, ButtonGroup, DateRange} from '@mui/material'
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
 import Button from '@mui/material/Button';
+
+
+
 
 
 const style = {
@@ -20,6 +23,12 @@ const style = {
   pb: 3,
 };
 
+const UserBox = styled(Box)({
+  display: "flex",
+  alignItems: "center",
+  gap: "10px",
+  marginBottom: "20px",
+});
 
 export const Add = () => {
   const [open, setOpen] = React.useState(false);
@@ -43,7 +52,41 @@ export const Add = () => {
         aria-describedby="parent-modal-description"
       >
         <Box sx={{ ...style, width: 400}}>
-          <Typography> Create a Post</Typography>
+          <Typography variant='h5' color="grey" textAlign={"center"}> Create a Post</Typography>
+          <UserBox>
+            <Avatar
+              src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              sx={{ width: 30, height: 30 }}
+            />
+            <Typography fontWeight={500} variant="span">
+              John Doe
+            </Typography>
+          </UserBox>
+          <TextField
+            sx={{ width: "100%" }}
+            id="standard-multiline-static"
+            multiline
+            rows={3}
+            placeholder="What's on your mind?"
+            variant="standard"
+          />
+          <Stack direction="row" gap={1} mt={2} mb={3}>
+            {/* <EmojiEmotions color="primary" />
+            <Image color="secondary" />
+            <VideoCameraBack color="success" />
+            <PersonAdd color="error" /> */}
+          </Stack>
+          <ButtonGroup
+            fullWidth
+            variant="contained"
+            aria-label="outlined primary button group"
+          >
+            <Button>Post</Button>
+            <Button sx={{ width: "100px" }}>
+              {/* <DateRange /> */}
+            </Button>
+          </ButtonGroup>
+
         </Box>
       </Modal>
     </div>
