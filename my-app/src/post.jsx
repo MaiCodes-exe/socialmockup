@@ -9,7 +9,7 @@ import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { green, grey, pink, purple, red } from '@mui/material/colors';
+import { green, grey, orange, pink, purple, red } from '@mui/material/colors';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
@@ -172,7 +172,7 @@ const Post = () => {
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          Sul sul! Currently on vacation. I am in paradise, check this out
+          Sul sul! Currently on vacation. I am in paradise, check this out.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -194,7 +194,7 @@ const Post = () => {
     <Card sx={{margin: 5}}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+          <Avatar sx={{ bgcolor: orange[400] }} aria-label="recipe">
             
           </Avatar>
         }
@@ -209,14 +209,14 @@ const Post = () => {
       <CardMedia
         component="img"
         height="20%"
-        image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.UyHASGvTSJrxQ9s5ugPx8AHaE8%26pid%3DApi&f=1&ipt=83bd2ef0f7c3c58310a26e4d925ee24ca54c6112d6fc32e80d1b3e7ae2f47d60&ipo=images"
+        image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.simplyhealthyfamily.org%2Fwp-content%2Fuploads%2F2017%2F06%2Fwhat-to-serve-with-paella.1..jpg&f=1&nofb=1&ipt=6ebc9d69de9420d3cf5aa085d3ca68c9d28dfef966f5c62927208f9b01a75143&ipo=images"
         alt="Paella dish"
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           This impressive paella is a perfect party dish and a fun meal to cook
           together with your guests. Add 1 cup of frozen peas along with the mussels,
-          if you like.
+          if you like. Please let me know if you tried it.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
