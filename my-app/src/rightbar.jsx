@@ -13,8 +13,8 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 
 const RightBar = () => {
   return (
-    <Box flex={2} p={2} sx={{display: {xs: "none", sm: "block"}}}>
-      <Box width={300}>
+    <Box flex={2} p={2} sx={{display: {xs: "none", sm: "block"}}} >
+      <Box width={300} bgcolor={'background.paper'}>
         <Typography variant='h6' fontWeight={90}>Online Friends</Typography>
         <AvatarGroup max={6}>
           <Avatar alt="Memy Sharp" src="/static/images/avatar/1.jpg" />

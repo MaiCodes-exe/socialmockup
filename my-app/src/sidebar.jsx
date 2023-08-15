@@ -9,7 +9,6 @@ import Divider from '@mui/material/Divider';
 import DraftsIcon from '@mui/icons-material/Drafts';
 import SettingsIcon from '@mui/icons-material/Settings';
 import HomeIcon from '@mui/icons-material/Home';
-import MessageIcon from '@mui/icons-material/Message';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import Switch from '@mui/material/Switch';
 import Message from '@mui/icons-material/Message';
